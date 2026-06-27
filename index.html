@@ -105,7 +105,9 @@ h2 em.it{color:var(--coral);}
 .about-grid p{color:var(--muted);font-size:1.02rem;margin-bottom:18px;}
 .about-grid p b{color:var(--text);}
 .quote{font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.3;color:var(--coral);border-left:3px solid var(--rose);padding-left:26px;}
-.credential{margin-top:26px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--sage);border-radius:18px;padding:22px 24px;box-shadow:0 4px 18px rgba(60,55,70,.06);display:flex;gap:16px;align-items:flex-start;}
+.credential{margin-top:14px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--sage);border-radius:18px;padding:20px 22px;box-shadow:0 4px 18px rgba(60,55,70,.06);display:flex;gap:16px;align-items:flex-start;}
+.creds-group{margin-top:26px;display:flex;flex-direction:column;gap:12px;}
+.creds-group .credential{margin-top:0;}
 .credential .ic{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:var(--coral);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;}
 .credential .cd .ct{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:700;margin-bottom:4px;}
 .credential .cd h4{font-weight:700;font-size:1.05rem;margin-bottom:4px;}
@@ -146,6 +148,7 @@ h2 em.it{color:var(--coral);}
 .reel-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px color-mix(in srgb, var(--coral) 16%, transparent);}
 .reel-card .frame{position:relative;width:100%;padding-bottom:177.78%;border-radius:16px;overflow:hidden;}
 .reel-card .frame.wide{padding-bottom:56.25%;}
+.reel-card .frame.wide-small{width:100%;max-width:440px;margin:0 auto;padding-bottom:0;aspect-ratio:16/9;}
 .reel-card .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
 .reel-card .cap{margin-top:12px;font-weight:600;font-size:.95rem;}
 .reel-card .cap small{display:block;color:var(--muted);font-size:.8rem;font-weight:400;margin-top:2px;}
@@ -218,7 +221,7 @@ h2 em.it{color:var(--coral);}
 .showreel .sr-t h3 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--coral);}
 .showreel .sr-t p{color:var(--muted);font-size:.98rem;}
 .doc-feature{margin-bottom:44px;}
-.doc-feature .df-v{position:relative;width:100%;padding-bottom:56.25%;border-radius:20px;overflow:hidden;box-shadow:0 22px 46px rgba(122,38,54,.22);margin-bottom:20px;}
+.doc-feature .df-v{position:relative;width:100%;max-width:440px;aspect-ratio:16/9;border-radius:20px;overflow:hidden;box-shadow:0 22px 46px rgba(122,38,54,.22);margin-bottom:20px;}
 .doc-feature .df-v iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
 .doc-feature .ct{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--coral);font-weight:700;margin-bottom:8px;}
 .doc-feature h3{font-weight:700;font-size:1.4rem;margin-bottom:10px;letter-spacing:-.5px;}
@@ -308,6 +311,15 @@ footer a{color:var(--coral);text-decoration:none;}
         <p>Me motiva trabajar con <b>ONGs, fundaciones y proyectos educativos</b>, porque creo que la comunicación está puesta al servicio de la comunidad.</p>
         <p>Creo firmemente en la <b>justicia social</b>: en crear espacios y ser un puente entre las brechas que se forman por las diferencias sociales, políticas y económicas. Para mí, el <b>diálogo y el activismo</b> son la vía para explorar, acompañar y aportar desde ese lugar.</p>
         <p>Complementé mi formación con un <b>programa de liderazgo de impacto social</b>, donde fortalecí mi pensamiento crítico, mis habilidades de comunicación y mi compromiso con generar un cambio positivo en mi comunidad.</p>
+        <div class="creds-group">
+        <div class="credential">
+          <div class="ic">✦</div>
+          <div class="cd">
+            <div class="ct">Formación principal</div>
+            <h4>Artes Visuales</h4>
+            <p>Universidad Nacional Abierta y a Distancia (UNAD) · Pregrado con enfoque audiovisual</p>
+          </div>
+        </div>
         <div class="credential">
           <div class="ic">★</div>
           <div class="cd">
@@ -315,6 +327,23 @@ footer a{color:var(--coral);text-decoration:none;}
             <h4>2026 Aspire Leaders Program</h4>
             <p>Aspire Institute · Programa fundado en Harvard y diseñado por profesores de Harvard Business School · 40 horas · Completado abril 2026</p>
           </div>
+        </div>
+        <div class="credential">
+          <div class="ic">◆</div>
+          <div class="cd">
+            <div class="ct">Reconocimiento audiovisual</div>
+            <h4>Finalista · Sandbox Audiovisual</h4>
+            <p>Seleccionada como finalista en el laboratorio de creación audiovisual · 2023</p>
+          </div>
+        </div>
+        <div class="credential">
+          <div class="ic">◎</div>
+          <div class="cd">
+            <div class="ct">Formación audiovisual</div>
+            <h4>Diplomado en Scouting</h4>
+            <p>Congo Films School · junto al equipo de Vaya Films · 2023</p>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -330,12 +359,11 @@ footer a{color:var(--coral);text-decoration:none;}
     <div class="bento">
       <div class="cell c-intro rv">
         <div class="ct">Proyecto destacado · Ene 2025 – Abr 2026</div>
-        <h3>Líder de Comunicaciones · Colegio Gimnasio Kaiporé</h3>
-        <p class="meta">Estrategia y liderazgo integral de la comunicación del colegio</p>
+        <h3>Trabajé como Líder de Comunicaciones · Colegio Gimnasio Kaiporé</h3>
       </div>
       <div class="cell c-context rv">
         <div class="ct">El lugar y su propósito</div>
-        <p>Kaiporé no es cualquier colegio: su modelo pedagógico está basado en la <b>justicia social</b>, un espacio para todos los niños y niñas. Conviven estudiantes con distintos diagnósticos y deportistas de alto rendimiento, cada uno acompañado según lo que necesita. Más que el contenido, lo que me movió a estar ahí fue ese propósito: <b>comunicar un proyecto educativo que abre lugar para todos</b>.</p>
+        <p>El modelo pedagógico de Kaiporé está basado en la <b>justicia social</b>: un espacio para todos los niños y niñas. Conviven estudiantes con distintos diagnósticos y deportistas de alto rendimiento, cada uno acompañado según lo que necesita. Más que el contenido, lo que me movió a estar ahí fue ese propósito: <b>comunicar un proyecto educativo que abre lugar para todos</b>.</p>
       </div>
       <div class="cell c-reto rv">
         <div class="ct">El reto</div>
@@ -386,7 +414,7 @@ footer a{color:var(--coral);text-decoration:none;}
   <div class="wrap">
     <div class="sec-head rv">
       <h2>Galería de <em class="it">piezas</em></h2>
-      <p>Muestras de trabajo. El reel viral está arriba en el inicio.</p>
+      <p>Algunas piezas que creé para el Colegio Gimnasio Kaiporé.</p>
     </div>
     <div class="reels-row rv">
       <div class="hero-reel">
@@ -422,8 +450,8 @@ footer a{color:var(--coral);text-decoration:none;}
         </div>
       </div>
       <div class="reel-card wide-card">
-        <div class="frame wide"><iframe src="https://www.youtube.com/embed/tzeBC8jFrdQ" title="Contenido audiovisual" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <p class="cap">Contenido audiovisual<small>Producción en formato horizontal</small></p>
+        <div class="frame wide-small"><iframe src="https://www.youtube.com/embed/tzeBC8jFrdQ" title="Humedal Córdoba" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <p class="cap">Humedal Córdoba</p>
       </div>
     </div>
   </div>
@@ -436,7 +464,7 @@ footer a{color:var(--coral);text-decoration:none;}
       <h2>Cine y <em class="it">producción</em></h2>
       <p>Dónde aprendí el lenguaje visual desde adentro.</p>
     </div>
-    <p class="cine-intro rv">Antes y durante mi camino en comunicación digital, trabajé en la producción de largometrajes de ficción. No llegué al cine por entretenimiento, sino para <b>entender el lenguaje visual en su forma más exigente</b>: cómo se construye una historia, cómo se elige una locación, cómo se coordina un equipo grande. Esa experiencia es la base del criterio visual y narrativo que hoy aplico en cada pieza que creo.</p>
+    <p class="cine-intro rv">Antes y durante mi camino en comunicación digital, trabajé en la producción de largometrajes de ficción. Ahí aprendí a <b>entender el lenguaje visual en su forma más exigente</b>: cómo se construye una historia, cómo se elige una locación, cómo se coordina un equipo grande. Esa experiencia es la base del criterio visual y narrativo que hoy aplico en cada pieza que creo.</p>
     <div class="showreel rv">
       <div class="sr-v"><iframe src="https://www.youtube.com/embed/xe1stjlPcYU" title="Showreel cámara" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <div class="sr-t">
@@ -483,14 +511,13 @@ footer a{color:var(--coral);text-decoration:none;}
         </div>
       </div>
     </div>
-    <p class="cine-note rv">Formación complementaria: Diplomado en Scouting · Congo Films School (Vaya Films).</p>
   </div>
 </section>
 
 <section class="cta" id="contacto">
   <div class="wrap rv">
     <h2>Lista para sumar talento a una <em class="it">causa con propósito.</em></h2>
-    <p>Resido en Bogotá y tengo total disponibilidad para reubicarme. Me entusiasma ayudar a través de la comunicación.</p>
+    <p>Resido en Bogotá y tengo disponibilidad para reubicarme. Busco poner la comunicación al servicio de la comunidad, en proyectos que tiendan puentes y generen impacto social real.</p>
     <a class="btn fill" href="mailto:yerci2001@gmail.com">yerci2001@gmail.com →</a>
   </div>
 </section>
